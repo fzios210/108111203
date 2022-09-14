@@ -1,0 +1,219 @@
+@font-face {
+    font-family: Silver;
+    src: url(Silver.ttf);
+  }
+
+body {
+	background-color: black;
+	color: white;
+	font-family: "Silver", "微軟正黑體", "Arial Black";
+	font-weight: 450;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.header {
+    height: 150px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(../img/head.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.nav {
+    height: 60px;
+    margin-top: -1%;
+}
+
+.option{
+    width: 300px;
+}
+
+.option-cont{
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+.li,.a{
+	display: inline-block;
+	text-align: center;
+    border-bottom: 3px solid rgba(228,0,127,1.00);
+    border-left: 3px solid rgba(228,0,127,1.00);
+    background-color: rgb(31, 31, 31);
+    padding-top: 3%;
+}
+
+.a{
+    width: 300px;
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.a:hover {
+    color: yellow;
+    text-decoration: none;
+    background-image: url(../img/nav-btn2.png);
+    background-position: 20% center;
+    background-size:40%;
+    background-repeat: no-repeat;
+    background-color: black;
+    border-bottom: 3px solid rgba(0,160,233,1.00);
+    border-left: 3px solid rgba(0,160,233,1.00);
+}
+
+.em{
+    color: white;
+    text-decoration: underline;
+}
+
+.em:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+.title2 {
+    background-image: url(../img/head1.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.head {
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/my2.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat:repeat-x;
+}
+
+.head2 {
+    background-image: url(../img/my1.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+.furit {
+    background-image: url(../img/furit.png);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.furit-hover {
+    background-image: url(../img/furit1.png);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section {
+    height: 50px;
+
+}
+
+.nick{
+    text-align: center;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px double rgba(23,46,184,1.00);
+    border-radius: 10px;
+    height: 500px;
+    width: 90%;
+    overflow: hidden;
+}
+
+
+.ul {
+    list-style-image: url(../img/arrow.png);
+    text-align: left;
+}
+
+.li2  {
+    font-size: 32px;
+    margin-left: 5%;
+}
+
+.h1 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 50px;
+}
+.sa {
+    text-decoration: none;
+    color: rgba(255,255,255,1.00);
+    background-image: url(../img/nav-btn.png);
+    background-size: cover;
+    background-position: center center;
+}
+.sa:hover {
+    color: rgba(255,241,0,1.00);
+    text-decoration: none;
+}
+
+.lv{
+    width: 50%;
+}
+
+/* Licenses */
+
+.div-cont{
+    margin-left: 13%;
+}
+
+.div-img {
+    width: 100%;
+}
+
+.div-img img {
+    width: 100%;
+}
+
+.arrow {
+    float: left;
+    width: 20%;
+    margin-top: 100%;
+}
+
+.arrow1 {
+    float: right;
+    width: 20%;
+    margin-top: 100%;
+}
+
+h4{
+    color: white;
+    font-size: 30px;
+}
+
+/* Fight */
+
+.text {
+    text-align: center;
+    font-size: 24px;
+    margin-top: -1%;
+}
+.HP {
+    border-top: rgb(182, 120, 120) 2px solid;
+    text-align: center;
+    font-size: 24px;
+    margin-top: -1%;
+}
+
+.mos {
+
+    text-align: center;
+}
+
+footer{
+    font-size: 24px;
+}

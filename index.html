@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>210</title>
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/210.png">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var win = 0;
+        var lose = 0;
+
+        function A() {
+            alert("一擊致命!成功打倒了怪物!");
+            alert("返回主畫面。");
+            win = win + 1;
+            var wins = document.getElementById("win")
+            wins.innerHTML = "Winning : " + win + " ";
+            $(document).ready(function () {
+                $("#tabs-content").html(
+                    null
+                )
+            });
+        }
+
+        function B() {
+            alert("包包裡無道具。");
+        }
+
+        function C() {
+            alert("防守成功，抵禦了怪物的攻擊。");
+        }
+
+        function D() {
+            n = Math.ceil((Math.random() * 2));
+            var text1 = "成功逃跑!"
+            var text2 = "逃跑失敗!"
+            if (n == 1) {
+                if (confirm(text1) == true) {
+                    alert("返回主畫面。");
+                    $(document).ready(function () {
+                        $("#tabs-content").html(
+                            null
+                        )
+                    });
+                }
+            }
+            else {
+                alert(text2);
+                alert("遭受怪物攻擊，戰鬥失敗。");
+                alert("返回主畫面。");
+                lose += 1;
+                var loses = document.getElementById("lose");
+                loses.innerHTML = "Fail : " + lose + " "
+                $(document).ready(function () {
+                    $("#tabs-content").html(
+                        null
+                    )
+                });
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 header"></div>
+        </div>
+        <div class="nav row">
+            <div class="option col-4">
+                <a class="a" id="Me" href="#" onclick="Rd();">Myself</a>
+                <ul class="option-cont">
+                    <li class="me"><a id="Inf" class="a" href="#">Information</a></li>
+                    <li class="me"><a id="Edu" class="a" href="#">Education</a></li>
+                    <li class="me"><a id="Ski" class="a" href="#">Skills</a></li>
+                </ul>
+            </div>
+            <div class="option col-4 ex">
+                <a class="a" id="Ex" href="#" onclick="Rd();">Experiences</a>
+            </div>
+            <div class="option col-4 lic">
+                <a class="a" id="Lic" href="#" onclick="Rd();">Licenses</a>
+            </div>
+        </div>
+        <div class="section"></div>
+        <div class="nick">
+            <h1>Nickname: <span id="nick" class="em"></span> &nbsp;<span id="win"></span> &nbsp;<span id="lose"></span></h1>
+        </div>
+        <div class="content" id="tabs-content">
+        </div>
+        <footer>
+            Producer: 資二B 108111203 何宜霖(210)_
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
